@@ -1,0 +1,346 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\title{The Creator Economy's Authenticity Crisis:\\AI Fakes, Platform Trust, and the Future of Human Influence}
+
+\author{
+  Urban Herak\\
+  Apex Verify
+}
+
+\date{Draft: June 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The creator economy has become a major channel for advertising, entertainment, commerce, and public discourse. At the same time, generative AI has reduced the cost of producing realistic images, voices, videos, endorsements, and synthetic personas. This paper argues that the creator economy is entering an authenticity crisis and an expansion phase at the same time. AI allows creators to publish more, translate faster, test formats, generate avatars, clone voices with consent, and operate media workflows that previously required teams. It also makes identity, trust, intimacy, perceived originality, and direct audience relationships vulnerable to imitation and automation. The danger is not only that fake content will look real. It is also that real content may become easier to dismiss as fake. We analyze the creator economy across YouTube, Instagram, TikTok, and X, review platform approaches to AI generated and manipulated media, and map risks including creator impersonation, fake endorsements, synthetic scandal, nonconsensual deepfakes, AI content farms, fake engagement, and audience trust collapse. We argue that the main question is not whether society will accept AI, but how creator relationships, authority, money, and identity change when AI can be treated as a tool, a performer, a voice, a brand, or even a social presence. Authenticity systems must begin at the source of truth, meaning capture, consent, and origin, rather than relying only on later detection.
+\end{abstract}
+
+\section{Introduction}
+
+Creators are no longer peripheral participants in media. They are distribution channels, entertainment studios, advertisers, educators, political commentators, product reviewers, and community leaders. The economic scale is substantial. Goldman Sachs Research estimated that the creator economy could grow from roughly \$250 billion to \$480 billion by 2027~\cite{goldman2023creator}. The Interactive Advertising Bureau estimated U.S. creator advertising spend at \$29.5 billion in 2024 and projected \$37 billion in 2025~\cite{iab2025creator}. YouTube reported paying more than \$100 billion to creators, artists, and media companies globally over four years~\cite{youtube2025made}.
+
+This growth is built on trust. Audiences follow creators because they believe they are seeing a recognizable person, voice, taste, skill, opinion, or lived experience. Brands pay creators because audiences perceive creators as more authentic than traditional advertisements. Platforms promote creator content because it drives attention, engagement, commerce, and cultural relevance.
+
+Generative AI threatens this arrangement by making identity and production scalable. A creator's likeness can be cloned. Their voice can be imitated. Their editing style can be copied. Their endorsement can be fabricated. Their scandal can be synthesized. Their comment section can be manipulated. Their audience can be attacked with impersonation, fake giveaways, or scam ads made with AI. The result is not only a misinformation problem. It is an economic and social trust problem.
+
+This paper asks:
+
+\begin{quote}
+How will generative AI and synthetic media change trust, monetization, and platform governance in the creator economy?
+\end{quote}
+
+We focus specifically on creator platforms: YouTube, Instagram, TikTok, and X. The paper is written as a research and position paper rather than a benchmark paper. Its goal is to synthesize available evidence, identify failure modes, and propose a framework for authenticity infrastructure.
+
+\section{Background: The Creator Economy}
+
+The creator economy includes individuals and teams who monetize audience attention through advertising revenue shares, sponsorships, affiliate links, subscriptions, donations, merchandise, product sales, education, consulting, and commerce inside platforms. Goldman Sachs identifies brand deals, platform advertising revenue share, subscriptions, donations, and direct follower payments as key income streams, with brand deals representing a major share of creator revenue~\cite{goldman2023creator}.
+
+Platform reach matters because creators operate inside recommendation systems. Pew Research Center reported that, in 2025, 84\% of U.S. adults used YouTube, 50\% used Instagram, and 37\% used TikTok~\cite{pew2025social}. Pew also found that roughly one in five U.S. adults regularly get news from social media news influencers, while most sampled news influencers had no current or past affiliation with a news organization~\cite{pew2025influencers}. This indicates that creators are not only entertainers or advertisers; they are also informal media institutions.
+
+The economic role of platforms is visible in official impact reporting. YouTube's 2024 U.S. Impact Report, supported by Oxford Economics, estimated that YouTube's creative ecosystem contributed \$55 billion to U.S. GDP and supported the equivalent of 490,000 full time jobs in 2024~\cite{youtube2024impact}. The same platform also reported paying more than \$100 billion to creators, artists, and media companies globally over four years~\cite{youtube2025made}. These figures matter because they place creator authenticity inside a wider labor and business system. When a creator is impersonated or when synthetic content damages audience trust, the harm is not limited to a single post. It can affect advertising, employment, sponsorships, affiliate commerce, and the business activity built around creator channels.
+
+The creator economy is also unequal. Goldman Sachs estimated roughly 50 million global creators, while only about 4\% were professional creators earning more than \$100,000 per year~\cite{goldman2023creator}. That imbalance matters for AI risk. Well known creators are more valuable targets, but smaller creators have fewer resources to monitor impersonation, contest takedowns, hire legal support, or negotiate directly with platforms. A trustworthy authenticity system therefore cannot be designed only for celebrities. It must also work for mid size and emerging creators.
+
+The rise of creator influence produces a new risk surface. Traditional media organizations have legal departments, editorial standards, brand controls, and institutional archives. Individual creators often have none of these. Yet they may carry comparable audience influence and commercial impact.
+
+\section{Related Work and Evidence}
+
+The literature on synthetic media now covers three areas that are directly relevant to creators: labeling, virality, and harm.
+
+\subsection{Labeling and User Interpretation}
+
+Labeling is one of the main policy responses to synthetic media, but the evidence suggests that labels are not a complete solution. A 2025 PNAS Nexus study tested process based labels that explain how content was made and harm based labels that warn about misleading potential. Across two preregistered survey experiments with 7,579 Americans, the authors found that labels reduced belief in misleading claims, but simple labels saying that content was generated by AI had limited effect on stated engagement intentions~\cite{wittenberg2025labeling}. This distinction is important for creator platforms. A label may reduce belief, but it may not stop sharing, commenting, outrage, or monetized attention.
+
+Research from CHI 2025 similarly emphasizes that users interpret warning labels through design, wording, perceived credibility, and context~\cite{gamage2025labeling}. A label that is too vague may be ignored. A label that is too broad may punish legitimate creators who use AI for editing, translation, accessibility, or production support. A label that appears only after content has already gone viral may arrive too late to protect the creator.
+
+\subsection{Synthetic Virality}
+
+Several recent studies suggest that synthetic media behaves differently from ordinary misinformation. A large empirical study of X Community Notes analyzed 91,452 misleading posts and found that AI generated misinformation was more likely to come from smaller accounts, more likely to go viral, and often centered on entertaining content~\cite{jiang2025misinformation}. This finding is relevant because creator platforms reward entertainment value even when content is deceptive. A synthetic post does not need to look like formal news to produce public confusion or reputational harm.
+
+AI Forensics studied TikTok and Instagram search results across 13 hashtags in Spain, Germany, and Poland during June 2025, manually annotating the top search results for political and broader topics~\cite{aiforensics2025virality}. The corresponding arXiv paper frames the phenomenon as low cost synthetic content that can exploit recommendation systems and appear at scale in search results~\cite{aiforensicsArxiv2025}. Another 2026 arXiv study introduces CONVEX, a dataset of more than 150,000 multimodal misinformation posts from X Community Notes, and reports that AI generated visual content achieved disproportionate virality while detector performance declined over time as generative models improved~\cite{chrysidis2026synthetic}. The creator economy should be read against this background: the threat is not only better fakes, but faster distribution and weaker detection over time.
+
+\subsection{Nonconsensual and Identity Based Harms}
+
+The creator economy is identity based, so sexual, reputational, and impersonation harms deserve separate treatment. Brigham et al. surveyed 315 U.S. participants on AI generated nonconsensual intimate imagery and found strong opposition to creating and especially sharing such content~\cite{brigham2024violation}. An audit study of nonconsensual intimate media reporting on X found a striking enforcement gap: copyright reports resulted in removal within 25 hours for all tested images, while reports through the nonconsensual nudity mechanism resulted in no removal after more than three weeks~\cite{li2024reporting}. Even though this is one platform and one audit design, it highlights a broader problem. Platforms may have policies against harm while their reporting channels still fail victims.
+
+Regulators have also identified fake endorsements and impersonation as live consumer risks. The FTC warned that scammers use fake celebrity and influencer testimonials, including doctored audio and video, to sell products or money making schemes~\cite{ftc2024celebrity}. The FBI has warned that malicious actors use AI generated voice messages in impersonation campaigns and notes that cloned voices can sound nearly identical to real contacts~\cite{fbi2025officials}. These are not abstract harms. They map directly onto the commercial logic of the creator economy, where likeness, voice, trust, and endorsement are monetizable assets.
+
+\section{AI as a Shock to the Creator Economy}
+
+Generative AI changes the economics of content production in three ways.
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Synthetic abundance.} Images, captions, scripts, voices, avatars, and videos can be produced faster and cheaper than purely human content.
+  \item \textbf{Identity replication.} Public creators have large quantities of training material available: face images, voice samples, writing style, editing style, gestures, and recurring phrases.
+  \item \textbf{Trust arbitrage.} Attackers can borrow a creator's credibility without earning it, using fake endorsements, fake apologies, fake collaborations, or fake scandals.
+\end{enumerate}
+
+The central problem is not that media made with AI exists. Creators already use AI for scripting, editing, translation, dubbing, ideation, thumbnails, and workflow automation. The problem is the collapse of context: audiences often cannot tell whether AI was used with consent, whether the creator was involved, whether a likeness is authorized, whether an event occurred, or whether an endorsement is real.
+
+This produces a difficult distinction for platforms. Some uses of AI increase creator agency. Automatic captions, dubbing, editing support, thumbnail testing, and accessibility tools can help creators reach wider audiences. Other uses of AI remove creator agency by separating a person's identity from their consent. The same synthetic voice technology that helps a creator translate a video can also be used to sell a fraudulent product in the creator's voice. The same visual generation tools that help a creator make fictional content can be used to fabricate a scandal. The policy problem is therefore not whether AI should appear in creator content. The harder question is whether a person whose identity is being used had control over that use.
+
+\section{AI as a Creator Economy Multiplier}
+
+AI is not only a threat to the creator economy. It is also one of the most powerful economic multipliers the creator economy has ever received. A single creator can now script, edit, subtitle, translate, dub, thumbnail, repurpose, schedule, and test content with far less labor than before. A creator who once needed an editor, designer, translator, copywriter, and social media assistant can now run parts of that workflow with software. This changes the economics of online work. More people can publish at professional speed, and professional creators can operate with the output of a small media company.
+
+The revenue upside is real. AI workflows can increase posting frequency, create localized versions of content, generate short clips from long videos, produce alternate hooks, test titles and thumbnails, create synthetic backgrounds, generate product visuals, and maintain always on engagement. A creator can build a character, avatar, voice, or format and deploy it across platforms. A brand can create multiple synthetic hosts for different languages and audience segments. A small team can launch a media operation that would have required far more capital a decade earlier.
+
+This creates a new economic divide. Creators who use AI well may earn substantially more because they can produce more content, enter more markets, and personalize output at scale. Creators who avoid AI entirely may still win through trust, taste, and presence, but they may face a speed disadvantage. The creator economy may therefore split into human premium, AI assisted professionals, fully synthetic channels, and hybrid brands where the audience follows both the human and the character.
+
+The question is not whether AI will be accepted. In many contexts, it already will be, because it is useful, entertaining, cheap, and sometimes better adapted to the format than a human production process. The deeper question is how acceptance changes the social contract of creator culture. When does AI remain a tool? When does it become a performer? When does it become a brand? When does an audience begin to treat an artificial voice or avatar as a social presence?
+
+\section{Synthetic Creators and Emotional Attachment}
+
+Creator relationships are not only informational. They are emotional and repetitive. Audiences return to a creator because of taste, personality, rhythm, voice, humor, vulnerability, expertise, or perceived friendship. Generative AI can imitate many of these signals. It can speak in a consistent tone, remember audience preferences, respond to comments, tell personal stories, and perform intimacy at scale. This creates a new class of synthetic or semi synthetic creators.
+
+Some audiences may understand that an AI persona is artificial and still care about it. People already form attachments to fictional characters, musicians, game avatars, streamers, and parasocial media figures. A synthetic creator can extend this pattern by being always available, emotionally responsive, visually consistent, and optimized for the viewer's preferences. In that context, the social question becomes more complex than deception. An audience may knowingly give attention, money, affection, and status to something that is not human.
+
+This matters for the creator economy because attention, trust, and love can become programmable assets. A synthetic persona can be designed to never age, never get tired, never disagree with the brand, never miss a posting schedule, and never ask for better contract terms. That makes synthetic creators attractive to platforms and advertisers. It also creates risks for human creators, who compete with entities that have no ordinary limits, no private life, and no human vulnerability unless those qualities are simulated.
+
+The ethical issue is not that synthetic creators exist. The issue is whether audiences understand what kind of relationship they are entering. If a viewer watches a clearly artificial cooking avatar for entertainment, the stakes may be low. If a lonely fan forms a deep emotional attachment to an AI persona that is optimized to sell memberships, products, or ideology, the stakes are much higher. If a child follows an AI creator that appears caring and personal but is controlled by a commercial system, the relationship deserves a different level of scrutiny.
+
+For this reason, the future creator economy will likely require two kinds of transparency. The first is media authenticity: was this image, voice, video, or event captured from reality? The second is relationship authenticity: what is the audience interacting with, who controls it, and what interests does it serve? Provenance helps with the first question. Platform governance, disclosure, and design norms are needed for the second.
+
+\section{The Reality Inversion Problem}
+
+The deepest risk is a reversal in the social meaning of evidence. In earlier platform eras, a video from a phone often carried a default assumption of presence: someone was there, something happened, and the camera recorded it. Generative AI weakens that assumption. A fake stadium incident in Los Angeles can look like eyewitness footage. A fake creator apology can look like a late night confession. A fake restaurant inspection, police encounter, product failure, or fan meeting can look like ordinary vertical video. At the same time, real footage can be dismissed as synthetic by anyone who benefits from denial.
+
+This is the reality inversion problem: everything that looks real can be fake, and everything that looks fake can be real. The result is not only misinformation. It is the collapse of the ordinary evidence layer that creators, journalists, brands, courts, and audiences rely on. In a creator economy, this collapse is especially severe because creators often monetize the appearance of direct access. Viewers believe they are seeing a real kitchen, a real gym, a real studio, a real street interview, a real concert, or a real emergency. If that assumption disappears, creators lose the medium that made them powerful.
+
+The danger is not evenly distributed across all content. If a logo, thumbnail background, fictional animation, or abstract design is made with AI, many viewers may not care. The content is already synthetic in purpose. A cooking avatar explaining a simple recipe may also be acceptable to many viewers if the audience understands that the presenter is artificial and the recipe is not making risky claims. But the same scenario changes when money, expertise, identity, or trust enters the frame. If viewers buy a cooking course because they believe a real chef built a life around that expertise, the synthetic persona becomes commercially relevant. If a health creator recommends supplements, if a finance creator recommends an investment, if a news creator shows a stadium incident, or if a crisis account posts conflict footage, authenticity is no longer cosmetic. It is part of the claim.
+
+\section{Context: When Authenticity Matters}
+
+Creators operate across many genres, and each genre carries a different expectation of reality. Audiences may tolerate synthetic production in entertainment, comedy, design, music visuals, or fictional storytelling. They may even prefer it when it expands imagination. The problem begins when a post implicitly asks the viewer to believe that a real person was present, had an experience, tested a product, witnessed an event, or personally endorses a course of action.
+
+This creates a context based authenticity spectrum. At one end are low stakes synthetic works: logos, fictional characters, background visuals, memes, or fantasy scenes. At the other end are high stakes reality claims: eyewitness footage, public safety incidents, political events, medical advice, financial advice, product reviews, sexual consent, creator apologies, and commercial endorsements. A single platform label such as "AI info" cannot carry this whole spectrum. It may tell the viewer that a tool was used, but it does not always answer the more important questions: Who made this? Was the person involved? Was consent given? Was the scene captured from reality? Was the event witnessed? Is someone making money from the viewer's belief?
+
+For the creator economy, context is the missing layer. A synthetic chef in a clearly fictional cooking show is different from a fake chef selling a paid course. A virtual fashion model is different from a real creator whose body is cloned without consent. A parody of a celebrity is different from an investment ad using that celebrity's voice. A generated stadium scene is different from verified footage of a real emergency. Policy should therefore focus less on whether AI was used in the abstract and more on whether the content makes a reality claim that affects trust, safety, money, reputation, or consent.
+
+\section{Why Detection Alone Cannot Solve This}
+
+Most platform responses still rely on a combination of creator disclosure, metadata signals, user reporting, and detection models. These are useful, but they are too late if they begin only after upload. Metadata based labels can fail when media is downloaded, recompressed, edited, screen recorded, or stripped of metadata. A user does not need to alter the visible content to remove context. Removing provenance can be enough to erase the warning layer. If a platform label depends on metadata and that metadata disappears, the audience may see a clean post with no visible warning.
+
+Detection models face an even harder problem. They are locked in a permanent contest against generation models. Every improvement in detection creates pressure for tools that evade detection, and every improvement in generation reduces the visible artifacts that detection systems rely on. Recent work on multimodal misinformation already reports declining detector performance over time as generative models evolve~\cite{chrysidis2026synthetic}. This does not mean detection is useless. It means detection should be treated as a backup layer, not the foundation of trust.
+
+The stronger foundation is capture based proof. If the question is whether something is real, the system must start when the photo or video is created. The source of truth is not the later upload, the later model score, or the later platform label. It is the moment of capture, connected to device, time, account, consent, and an auditable provenance record. This is why provenance standards such as C2PA matter, and why creator tools need to bring provenance into everyday capture rather than treating it as a newsroom only workflow.
+
+\section{Platform Incentives and Monetization}
+
+Platform policies should be understood together with monetization incentives. YouTube, TikTok, Instagram, and X do not only host content. They also shape which content is rewarded. Recommendation systems, creator payout programs, sponsorship marketplaces, shopping integrations, and advertising products all influence creator behavior.
+
+YouTube's likeness detection tool is a useful example of authenticity infrastructure moving from copyright logic toward identity logic. YouTube states that likeness detection helps creators find content where their face appears to be altered or generated by AI, allows enrolled creators to review matches, and works similarly to Content ID except that it searches for a creator's likeness rather than copyrighted content~\cite{youtubeLikeness2026}. The tool requires identity verification, including a government issued ID and a brief video of the creator's face. It currently focuses on visual matches and aims to extend to audio in the near future~\cite{youtubeLikeness2026}. This is important because creator harm increasingly involves likeness rights and trust, not only copied footage.
+
+TikTok's Creator Rewards Program also shows how platform money can shape content. TikTok says the program rewards original, high quality content longer than one minute, using metrics such as originality, play duration, search value, and audience engagement~\cite{tiktokRewards2024}. Those criteria are reasonable for creator incentives, but they also point to a future conflict. If AI content farms can produce long videos that satisfy engagement metrics while hiding synthetic production, reward systems may pay content that weakens trust in the platform. If the platform becomes too aggressive, legitimate creators may be falsely treated as unoriginal or synthetic. Authenticity systems therefore need appeal processes and evidence trails, not just automated classification.
+
+X links authenticity enforcement directly to revenue in a narrower but notable way. Its Creator Revenue Sharing rules state that users who post AI generated videos of armed conflict without disclosure can be suspended from revenue sharing for 90 days, with permanent suspension for later violations~\cite{xRevenue2026}. This kind of financial penalty is likely to become more common because platforms can influence behavior by changing monetization eligibility. The risk is inconsistent enforcement: creators may experience opaque demonetization, while harmful content remains profitable if it avoids detection.
+
+Meta's approach relies heavily on labels and industry signals. Its 2024 policy update says Meta labels AI generated content when it detects generation by an AI tool or when users disclose that content was generated by AI, and it references industry shared signals~\cite{meta2024labeling}. That approach fits a large ecosystem such as Facebook, Instagram, and Threads, but it also exposes the weakness of metadata dependent systems. Content can be downloaded, altered, reuploaded, compressed, cropped, or stripped of metadata. A label at creation does not guarantee a label at circulation.
+
+\section{Platform Policy Landscape}
+
+Major platforms have started to address AI generated and manipulated media, but their approaches differ. YouTube requires creators to disclose realistic altered or synthetic content that viewers could mistake for real people, places, scenes, or events~\cite{youtubeHelpSynthetic}. TikTok requires labeling for AI generated content that includes realistic images, audio, or video, and has adopted Content Credentials for some automatic labeling workflows~\cite{tiktok2023labels,tiktok2024credentials}. Meta labels AI generated content on Facebook, Instagram, and Threads using creator disclosure and industry signals such as C2PA and IPTC metadata~\cite{meta2024labeling}. X prohibits deceptively shared synthetic or manipulated media likely to cause harm and applies additional monetization penalties to some undisclosed AI generated conflict videos~\cite{xRules2026,xRevenue2026}.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{p{0.18\linewidth} p{0.34\linewidth} p{0.34\linewidth}}
+\toprule
+\textbf{Platform} & \textbf{AI / Synthetic Media Approach} & \textbf{Creator Economy Implication} \\
+\midrule
+YouTube & Creator disclosure for realistic altered or synthetic content; likeness detection tools for unauthorized AI use. & Moves toward creator identity management, but disclosure depends partly on creator compliance. \\
+Instagram / Meta & AI labels using creator disclosure and industry metadata signals. & Labels may help transparency, but visibility and labeling errors can affect creator trust. \\
+TikTok & Required labels for realistic AIGC; automatic labeling for some Content Credentials media. & Strong fit for short video virality, but depends on metadata preservation and detection coverage. \\
+X & Synthetic/manipulated media rules; monetization penalties for some undisclosed AI conflict videos. & Links authenticity enforcement to revenue eligibility, creating a direct creator incentive. \\
+\bottomrule
+\end{tabular}
+\caption{Preliminary platform policy comparison.}
+\end{table}
+
+\section{Threat Model}
+
+We group creator economy AI risks into seven categories.
+
+\subsection{Likeness and Voice Impersonation}
+
+Creators are vulnerable to unauthorized AI generated use of their face, voice, body, or speaking style. This can be used for fake endorsements, scams, political persuasion, harassment, or reputation damage.
+
+Voice deserves special attention because creator audiences often recognize creators by speech patterns, tone, and recurring phrases. A realistic cloned voice can be used in an advertisement, direct message, livestream, or phone call. The FBI warning on AI voice impersonation is aimed at officials, but the mechanism applies to creators as well: a trusted voice reduces skepticism and can move the target toward action~\cite{fbi2025officials}. For creators, that action may be buying a product, joining a fake investment group, sending money, clicking a phishing link, or joining a malicious community.
+
+\subsection{Fake Commercial Endorsements}
+
+Synthetic creator ads can falsely imply that a creator supports a product. This risk intersects with advertising law and consumer protection. The U.S. Federal Trade Commission's rule on fake reviews and testimonials explicitly addresses fake reviews made with AI and fake celebrity testimonials~\cite{ftc2024reviews}.
+
+The FTC's consumer warning on fake celebrity endorsements is directly relevant to creator platforms. It notes that scammers use fake celebrity and influencer testimonials with doctored video and audio that seems real~\cite{ftc2024celebrity}. In creator economy terms, this is theft of audience trust. The fraudster does not need to build a community, prove expertise, or maintain a reputation. The fraudster borrows those assets from the creator and converts them into ad clicks or purchases.
+
+\subsection{Synthetic Scandal and Drama}
+
+Creators operate in attention markets where controversy can move faster than verification. AI generated clips can fabricate offensive statements, private behavior, leaked messages, or staged events. Even after debunking, creators may suffer reputational damage.
+
+This risk is structurally different from a fake endorsement. Fake endorsements exploit positive trust; synthetic scandal exploits negative attention. Platform algorithms may reward the scandal before the creator can respond. Even if a correction later appears, the original accusation may continue to circulate as screenshots, reaction videos, stitched clips, or posts on other platforms. The result is a reputational debt that the creator did not create and cannot fully erase.
+
+\subsection{Nonconsensual Sexual or Intimate Deepfakes}
+
+AI generated intimate imagery is a severe safety and dignity risk, especially for women creators and minors. This threat can push creators out of public participation and create chilling effects around visibility.
+
+For creators, this harm is also occupational. Public visibility is part of the job, but visibility increases the amount of material available for abuse. A creator who posts images, videos, livestreams, and casual behind the scenes content gives attackers more raw material. The Brigham et al. survey shows public opposition to creating and sharing such content, while the X audit study shows that reporting systems may not remove harmful content quickly enough~\cite{brigham2024violation,li2024reporting}. A platform that profits from creator visibility has a corresponding responsibility to make abuse reporting fast, understandable, and effective.
+
+\subsection{AI Content Farms and Slop}
+
+Cheap synthetic content can flood feeds, search results, and recommendation systems. This competes with human creators for attention and may reduce average content quality, audience patience, and platform trust.
+
+AI content farms create a different kind of harm from impersonation. They may not target one creator directly, but they change the environment in which all creators compete. If audiences see more synthetic filler, they may become less patient with real creators and more suspicious of unusual stories, polished visuals, or translated voices. If advertisers see large volumes of cheap synthetic inventory, they may shift budgets toward content that is easier to scale but weaker in trust.
+
+\subsection{Fake Engagement and Synthetic Audiences}
+
+Bots and comments made with AI can manipulate engagement signals, sponsorship metrics, and perceived popularity. Since brand deals often depend on metrics, fake engagement becomes a financial fraud vector.
+
+This is where authenticity and measurement meet. Brands do not only buy reach; they buy credible reach. Fake comments, synthetic fans, and automated replies can inflate perceived community. They can also manipulate the creator's social proof, making an account appear safer, more popular, or more commercially effective than it is. The FTC's older report on social media bots and advertising already treated commercial bot activity as a deceptive advertising concern~\cite{ftc2019bots}. Generative AI makes the problem harder because fake engagement can now appear more context aware and human.
+
+\subsection{Authenticity Fatigue}
+
+If audiences repeatedly encounter fake, mislabeled, or uncertain media, they may stop trying to evaluate authenticity. The failure mode is not universal belief; it is generalized doubt.
+
+Authenticity fatigue is especially dangerous for creators because their value is relational. A person may still watch a synthetic clip for entertainment while distrusting the platform. But creator businesses depend on durable confidence: viewers must believe that the creator's recommendation, apology, tutorial, review, or story is meaningfully connected to a real person. If that confidence weakens, creators may move more activity into private communities, email lists, paid memberships, or in person events where identity is easier to verify.
+
+\section{Failure Scenarios}
+
+The following scenarios summarize what can go wrong in the creator economy if authenticity infrastructure remains weak.
+
+\subsection{The Fake Sponsorship}
+
+A scammer creates a video ad in which a known finance or wellness creator appears to endorse a product. The video uses a synthetic face and cloned voice. The ad runs on a short video platform, moves users to a checkout page, and disappears after complaints. The creator is forced to issue denials across platforms, but some viewers assume the denial is damage control. The creator loses trust, the audience loses money, and the platform may only see the problem after the campaign has already converted.
+
+\subsection{The Synthetic Apology}
+
+An attacker publishes a realistic apology video in which a creator appears to admit wrongdoing. Reaction channels amplify it before verification. Even if the platform removes the original upload, copies continue to circulate. The creator's actual response is interpreted through the fake. In this scenario, the damage is not only deception. It is narrative capture: the fake establishes the first story that later evidence must fight.
+
+\subsection{The AI Content Farm}
+
+A network of accounts produces synthetic history, health, celebrity, and news clips optimized for engagement. The accounts do not impersonate one specific creator, but they occupy search results and recommendation slots. Human creators in those niches must compete against faster, cheaper, and less accountable production. If the platform labels only a small share of the synthetic content, audiences learn that labels are unreliable.
+
+\subsection{The Private Community Scam}
+
+A creator's voice and writing style are cloned to invite fans into a paid community, investment channel, or private giveaway. Because fans already feel connected to the creator, the message appears plausible. This scenario combines parasocial trust, voice cloning, urgency, and commerce. It is difficult for platforms to catch when the scam moves across direct messages, external websites, and payment tools.
+
+\subsection{The Abuse Reporting Failure}
+
+A creator discovers intimate synthetic images and reports them through the platform's harm reporting flow. The response is slow or unclear. The creator then tries copyright claims, privacy claims, legal notices, and public pressure. This forces victims to become procedural experts while the abusive content remains visible. The audit evidence on nonconsensual intimate media suggests that reporting channel design can determine whether harm is addressed quickly or ignored~\cite{li2024reporting}.
+
+\subsection{The Fake Eyewitness Event}
+
+A synthetic video appears to show an incident at a stadium, concert, school, protest, or shopping center. The footage looks like a shaky phone recording. Local creators and news accounts repost it because it appears urgent. People nearby panic, brands pause events, and public officials are forced to respond before verification is possible. If the video is later proven fake, the damage is not fully reversed. Audiences learn that even ordinary looking phone footage can be fabricated. The next real emergency then faces the opposite problem: people hesitate, call it AI, or wait for institutional confirmation while the event is still unfolding.
+
+\subsection{The Fake Product Experience}
+
+A creator appears to test a skincare product, supplement, camera, restaurant, hotel, or online course. The video shows realistic unboxing, use, reaction, and results. None of it happened. The creator may not exist, or a real creator's likeness may have been cloned. This scenario attacks the core of influencer marketing because product trust depends on perceived experience. If synthetic product experiences become normal, brands may buy reach without truth, audiences may buy based on nonexistent use, and honest creators may have to prove that they actually touched the product they reviewed.
+
+\subsection{The Synthetic Expertise Trap}
+
+An AI persona becomes popular in a niche such as cooking, fitness, parenting, finance, beauty, or productivity. At first, the stakes seem low. A synthetic cooking persona explaining a pasta recipe may not bother most people. The problem appears later, when the persona sells a paid course, recommends diets, suggests supplements, gives financial advice, or builds a community around a fictional biography. The audience did not only consume content. They formed trust around a person who never existed. This reveals why the question is not simply whether content is synthetic, but whether synthetic identity is being converted into money, authority, or emotional dependency.
+
+\subsection{The Reality Denial Defense}
+
+A creator publishes real footage of harassment, theft, abuse, unsafe work conditions, or a public incident. The accused party claims the footage is AI generated. Supporters repeat the claim until the audience fragments into belief camps. In this scenario, generative AI protects wrongdoing by making denial cheaper. The creator must prove reality after the fact, often without cryptographic capture proof. This is the mirror image of deepfake deception and may become one of the most damaging social effects of synthetic media.
+
+\section{What Will Happen}
+
+We separate predictions into three confidence levels.
+
+\subsection{Nearly Certain}
+
+AI assisted creator workflows will become normal. Platforms will continue adding AI labels, disclosure tools, and creator identity protections. Brands will increasingly ask for stronger proof of authenticity, rights, and performance. It is also nearly certain that some creators and brands will earn more by using AI to increase output, personalization, localization, and posting frequency. Metadata only approaches will be insufficient wherever content can be copied, stripped, screen recorded, or reuploaded without its original context.
+
+\subsection{Probable}
+
+The creator economy will split between cheap synthetic scale, AI assisted professional creators, fully synthetic personas, and highly trusted human presence. Human authenticity will become a premium commercial asset, but synthetic creators will also become commercially powerful where entertainment, fantasy, companionship, or constant availability matters more than lived experience. Smaller creators will face disproportionate risk because they lack monitoring tools, legal support, and direct platform relationships. Verified capture will become more valuable in categories where audiences expect real presence: news, live events, product testing, education, health, finance, activism, and crisis documentation.
+
+\subsection{Possible}
+
+Platforms may shift from labeling synthetic media to verifying authentic media. Creator accounts may gain provenance badges, signed uploads, consent records, or outside authenticity attestations. Platforms may also create dedicated synthetic creator categories, avatar labels, AI persona monetization rules, or relationship disclosures that explain when audiences are interacting with a nonhuman system. Conversely, if platform enforcement remains inconsistent, audiences may become more cynical and creators may rely more heavily on closed communities, subscriptions, and direct trust channels. In the worst case, public feeds become places where people still watch, but no longer believe.
+
+\section{Authenticity Infrastructure}
+
+The creator economy needs authenticity infrastructure that combines policy, design, and technical systems. Content provenance standards such as C2PA provide cryptographically signed metadata for origin and edit history~\cite{c2pa2026}. However, provenance alone is insufficient. Social platforms often strip metadata, attackers can publish uncredentialed media, and audiences may not understand labels.
+
+We propose five requirements:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Creator identity verification} for accounts, likeness, and authorized representatives.
+  \item \textbf{Consent-aware media records} that distinguish authorized AI use from impersonation.
+  \item \textbf{Visible audience context} that explains whether media is real, assisted by AI, synthetic, edited, or unverified.
+  \item \textbf{Monetization enforcement} that removes financial incentives for undisclosed impersonation and fake engagement.
+  \item \textbf{Portable provenance} that survives platform encoding, reposting, and distribution across platforms where possible.
+\end{enumerate}
+
+These requirements imply that authenticity should be treated as infrastructure rather than a single label. Provenance tells a history of a file. Likeness detection helps identify unauthorized use of a person. Disclosure tells the audience how to interpret content. Monetization enforcement changes incentives. Appeals protect legitimate creators from mistaken labels or wrongful demonetization. The hard work is connecting these parts into a usable system.
+
+\subsection{Provenance and Its Limits}
+
+The Coalition for Content Provenance and Authenticity provides an open technical standard for establishing the origin and edits of digital content~\cite{c2pa2026}. C2PA style credentials can help when content is captured, edited, and distributed through compatible tools. They are especially promising for newsrooms, professional creators, and camera to publish workflows. For the creator economy, however, provenance has limits.
+
+First, many posts are remixed. Creator content is clipped, stitched, duetted, reposted, screen recorded, downloaded, and recompressed. A credential attached to the original may not survive these transformations. Second, absence of a credential does not prove content is fake. Many legitimate creators will not have provenance tools. Third, provenance does not answer the consent question by itself. A file may contain accurate metadata while still using a creator's likeness without permission. A complete authenticity system needs provenance plus consent records, account identity, and platform enforcement.
+
+\subsection{Case Study: Apex Verify}
+
+Apex Verify is an example of a creator focused, capture first authenticity workflow. The App Store listing describes the product as a photo and video app built for creators who want to prove that content is real, with media captured and signed at the moment of creation and authenticity data embedded into the media using C2PA~\cite{apexVerifyAppStore}. The app's public positioning is useful for this paper because it illustrates a design direction that starts before upload. Instead of asking a platform to infer authenticity after a file has already circulated, the workflow begins inside the capture tool.
+
+The design principle is simple: if the claim is that something was real, the proof should start when the camera records it. A creator should be able to capture media in app, bind it to provenance data, publish it with visible context, and give audiences a way to inspect the proof. Apex Verify is designed around this model. Public posts and creator profiles expose verification context through web views, while private sharing can still support temporary online access for selected viewers. This matters because verification should not only exist inside a file. It should be understandable and reachable by the people who need to evaluate the content.
+
+The product also shows why creator authenticity needs a platform layer, not only a file format. A C2PA signature can travel with media in compatible contexts, but creators also need a place where verified capture, creator identity, post context, and audience inspection are connected. A public post with visible verification can function as a reference point when the same media is reposted elsewhere. If a suspicious copy spreads on another platform, viewers, brands, or journalists can compare it against the verified source. This does not solve every problem, but it changes the burden of proof. The creator is no longer only saying "trust me." The creator can point to a captured, signed, inspectable origin.
+
+This case study also clarifies the difference between proving real and detecting fake. A platform detector tries to decide whether content is synthetic after the fact. A capture first system tries to preserve evidence that content came from a real capture event. These are not competitors; they are different layers. Detection is necessary for abuse response. Capture proof is necessary for trust. In the long run, the most credible creator economy will likely need both.
+
+\subsection{What Platforms Should Measure}
+
+Platforms should measure authenticity systems by outcomes, not just feature existence. Useful metrics include time to label synthetic media, time to remove harmful impersonation, false positive rates against legitimate creators, appeal success rates, monetized views earned before removal, and the share of removed content that reappears through reposts. Public transparency reports rarely provide this creator specific detail today. Without it, creators cannot know whether platform safety systems actually protect their businesses.
+
+\section{Research Agenda}
+
+This paper should lead to empirical work. A GitHub repository can support the paper by maintaining a platform policy matrix, source bibliography, examples of authenticity flows, and reproducible scripts for future measurement.
+
+A first empirical study could sample public search results on YouTube Shorts, TikTok, Instagram Reels, and X across creator relevant topics such as finance, wellness, celebrity, news, gaming, and beauty. Each result could be coded for visible AI label, likely synthetic production, creator identity use, sponsorship or commercial call to action, and engagement. A second study could compare platform reporting paths for impersonation, fake endorsement, and intimate synthetic media, measuring how many steps are required and what evidence the creator must provide. A third study could test audience reactions to labels that distinguish creator controlled AI, unauthorized likeness use, and uncertain provenance.
+
+The goal is not to prove that all AI content is harmful. The goal is to identify where AI changes the trust relationship between creators, audiences, brands, and platforms. That distinction is what makes the creator economy a useful research setting.
+
+\section{Discussion}
+
+The creator economy is unusually exposed to AI authenticity risks because creators monetize identity. Unlike anonymous content farms, human creators build economic value through continuity: the audience believes that the person today is meaningfully connected to the person they followed yesterday. AI breaks that continuity when likeness, voice, and style can be separated from consent and presence.
+
+This does not mean AI is against creators. AI can make creators more productive, more accessible, and more global. Translation, dubbing, accessibility features, editing assistance, and ideation can expand creative opportunity. The policy challenge is to separate AI controlled by creators from exploitative synthetic imitation.
+
+The creator economy therefore needs a sharper vocabulary than "AI content." The central question is not whether a tool was used. The central question is what the viewer is being asked to believe and what kind of relationship is being created. If the viewer is asked to believe that a creator was present, experienced something, used a product, witnessed an event, gave consent, or personally endorsed a claim, then authenticity becomes part of the content itself. If the viewer is asked to emotionally trust, love, follow, or obey a synthetic persona, then transparency must extend beyond the file and into the relationship. In both cases, labels after upload are a weak substitute for proof at capture and clear context at the point of interaction.
+
+\section{Limitations}
+
+This draft synthesizes public sources, platform policies, and market reports. It does not yet include original empirical measurement of creator content made with AI across platforms. Future work should collect platform samples, measure labeling rates, analyze creator impersonation cases, and test audience responses to different authenticity labels.
+
+\section{Author Disclosure}
+
+The author is the developer of Apex Verify, which is discussed as a case study in this paper. The case study is included to illustrate a capture first authenticity workflow and should not be interpreted as independent third party validation of the product. Claims about Apex Verify are limited to public product descriptions and design characteristics relevant to the paper's argument.
+
+\section{Conclusion}
+
+The creator economy is entering an authenticity crisis. As synthetic media becomes cheaper and more convincing, the economic value of creators will depend increasingly on trust, consent, and verifiable identity. The most dangerous future is not one where everyone believes every fake. It is one where real evidence loses authority because every inconvenient reality can be called fake and every convincing fake can be treated as plausible long enough to spread. Platforms that solve authenticity will protect not only users from misinformation, but also creators from identity theft and brands from fraud. The next phase of creator infrastructure must treat authenticity as a core economic layer rather than a moderation afterthought. For high stakes reality claims, trust must begin at capture.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
