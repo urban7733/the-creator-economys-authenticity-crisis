@@ -2,6 +2,7 @@
 *.bbl
 *.blg
 .DS_Store
+arxiv-submission.zip
 *.fdb_latexmk
 *.fls
 *.log
