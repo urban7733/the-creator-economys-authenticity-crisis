@@ -44,15 +44,6 @@ The practical answer explored here is **capture first proof**: if a post claims 
 - `docs/scenarios.md`: creator economy failure scenarios
 - `SOURCE_AUDIT.md`: source quality and legal use audit
 
-## Build
-
-The paper is written in LaTeX. The current local compiler is Tectonic:
-
-```sh
-cd paper
-tectonic main.tex
-```
-
 ## Draft Status
 
 This is an early research draft. Claims, citations, and structure will continue to change as the paper develops.
